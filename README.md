@@ -16,3 +16,10 @@ Conhecido como **Wrapper**:
 - altere o comportamento de um objeto sem criar uma nova subclasse
 - combine vários comportamentos embrulhando um objeto em vários decoradores.
 
+## Abstract Factory
+O padrão Abstract Factory é um padrão criacional que resolve o problema de criar familias inteiras de produtos sem especificar suas classes concretas.
+Define uma interface para criar todos os produtos distintos, mas deixa a criação real do produto para classes fábricas concretas.
+O código cliente chama os métodos de criação de um objeto fábrica em vez de criar produtos diretamente com uma chamada de construtor.
+O código cliente permite que o mesmo código cliente funcione com produtos diferentes. Você apenas cria uma nova classe fábrica concreta e passa para o código cliente.
+
+No caso do Python não é recomendado o uso desse padrão, pois a linguagem já possui mecanismos nativos que facilitam a criação de objetos sem a necessidade de uma fábrica abstrata, inclusive existe métodos pythonicos para isso como o uso de funções.
