@@ -23,3 +23,9 @@ O código cliente chama os métodos de criação de um objeto fábrica em vez de
 O código cliente permite que o mesmo código cliente funcione com produtos diferentes. Você apenas cria uma nova classe fábrica concreta e passa para o código cliente.
 
 No caso do Python não é recomendado o uso desse padrão, pois a linguagem já possui mecanismos nativos que facilitam a criação de objetos sem a necessidade de uma fábrica abstrata, inclusive existe métodos pythonicos para isso como o uso de funções.
+
+Como python é uma linguagem que combina POO com programação funcional, usar Abstract Factory pode ser considerada engenharia excessiva (over-engineering) em muitos casos.
+
+## Builder
+O builder é um padrão criacional que permite construir objetos complexos passo a passo. Ele ajuda a evitar construtores excessivos.
+Temos uma classe Produto, as interfaces do builder que é uma classe abstratas e o construtores concretos, um diretor para fazer o meio de campo ou seja, a ordem que as etapas são executadas e o cliente que pode usar o diretor para interegarir com o builder
